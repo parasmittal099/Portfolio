@@ -1,17 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f2f5;
+    color: #333;
 }
 
 .bio {
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px;
     width: 100%;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .cards {
@@ -19,21 +23,52 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .card {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.day-list button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.day-list button:hover {
+    background-color: #0056b3;
+}
+
+.greeting {
+    position: fixed;
+    top: 40px;
+    right: 280px; /* Adjusted from 60px to 80px */
+    z-index: 1000;
+}
+
+.greeting img {
+    max-width: 75px;
+    max-height: 75px;
 }

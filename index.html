@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="greeting" class="greeting">
+        <img src="hi.gif" alt="Hi">
+    </div>
     <div class="bio">
-        <h1>John Doe</h1>
-        <p>Web Developer with a passion for creating beautiful and functional websites.</p>
+        <h1>Paras Mittal</h1>
+        <p>I think I am a competent developer, but yes I used copilot for this.</p>
     </div>
     <div class="cards">
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
-        <div class="card">Card 4</div>
+        <div class="card" onclick="toggleCard(this)">
+            Learning SpringBoot Everyday
+            <div class="day-list" style="display: none;">
+                <button onclick="window.open('Day_1_Introduction_to_SpringBoot.html', '_blank')">Day 1: Introduction to SpringBoot</button>
+                <button onclick="window.open('Day_2_Setting_up_the_environment.html', '_blank')">Day 2: Setting up the environment</button>
+                <button onclick="window.open('Day_3_Creating_your_first_SpringBoot_application.html', '_blank')">Day 3: Creating your first SpringBoot application</button>
+                <!-- Add more days as needed -->
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
